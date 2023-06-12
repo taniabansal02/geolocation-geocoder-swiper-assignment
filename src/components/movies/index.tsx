@@ -36,7 +36,7 @@ const Foods = (props) => {
     return (
         <View style={styles.mainView}>
             <Text style={styles.heading}> Inspiration for your first order </Text>
-            <FlatList data={food} renderItem={renderItem} horizontal={true}></FlatList>
+            <FlatList data={food} renderItem={renderItem} horizontal={true} showsHorizontalScrollIndicator={false}></FlatList>
 
             <Text style={styles.title}>Best Food in {props.loc} </Text>
         </View>
